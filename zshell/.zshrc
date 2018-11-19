@@ -25,6 +25,12 @@ compinit
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
+source ~/.keybindings
+source ~/.common_aliases
+source ~/.tmux_aliases
+source ~/.python_aliases
+source ~/.git_aliases
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

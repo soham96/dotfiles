@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+alias la='ls -A'
+alias l='ls'
+
+alias c='clear && ls'
+alias cl='clear && echo "" && pwd && ls'
+
+alias q='exit'
+
+alias p='cd ~/Desktop/projects'
+alias pg='cd ~/github'
+alias pl='cd ~/learn'
+alias pdwn='cd ~/Downloads'
+alias pd='cd ~/Desktop'
+alias pw='cd ~/Desktop/saama'

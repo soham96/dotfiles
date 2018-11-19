@@ -1,0 +1,33 @@
+#! /bin/zsh
+
+# Fast was to check status
+alias gs='git status'
+
+# Quickly add files
+alias ga='git add'
+alias gau='git add -u'
+
+# Easier commits
+alias gc='git commit'
+alias gcm='git commit -m'
+
+# Better commits
+alias gucm="git add -u && git commit -m"
+
+# Pretty logs
+alias gl='git lg'
+alias gg='git hm'
+alias ggg='git lh'
+alias gggg='git hi'
+
+# Simpler diffing
+alias gd='git diff'
+alias gds='git diff --staged'
+
+# Easier checkout
+alias gcom='git checkout master'
+alias gcob='git checkout -b'
+
+# Fancy push
+alias gpu='git push origin $(git branch | grep "\*" | sed s:^..::g )'
+alias gpl='git pull origin $(git branch | grep "\*" | sed s:^..::g )'

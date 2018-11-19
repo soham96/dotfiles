@@ -1,0 +1,15 @@
+#! /bin/zsh
+
+alias py="python"
+alias dc='deactivate'
+
+addText () {
+ source ~/.virtualenvs/qc/bin/activate
+	front="source ~/.virtualenvs/"
+	back="/bin/activate"
+	BUFFER=${front}${BUFFER}${back}
+	zle end-of-line
+	zle accept-line
+}
+zle -N addText
+bindkey '^W' addText

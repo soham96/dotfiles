@@ -1,0 +1,27 @@
+#!/bin/zsh
+
+#BACK
+goback () {
+	BUFFER="cd .."$BUFFER
+	zle end-of-line
+	zle accept-line
+	}
+zle -N goback
+bindkey "^o" goback
+ 
+#HOME
+goto_home () { 
+	BUFFER="cd ~/"$BUFFER
+	zle end-of-line
+	zle accept-line
+	}
+zle -N goto_home
+bindkey "^p" goto_home
+
+#SUDO
+addSudo () {
+	BUFFER="sudo "${BUFFER}
+	zle end-of-line
+}
+zle -N addSudo
+bindkey '^s' addSudo
