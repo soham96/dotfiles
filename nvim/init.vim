@@ -171,11 +171,11 @@ nnoremap <silent><s-right> :tabm +1<cr>
 nnoremap <silent><s-left> :tabm -1<cr>
 nnoremap <silent><leader>t :tabnew<cr>
 
-" Easier window switching
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+"Better window navigation
+nnoremap J <C-w>j
+nnoremap K <C-w>k
+nnoremap H <C-w>h
+nnoremap L <C-w>l
 
 " Split like a boss
 nnoremap <silent><Leader>v :vsplit \| :Startify<cr>
@@ -185,7 +185,7 @@ nnoremap <silent><Leader>h :split \| :Startify<cr>
 nnoremap <silent><Leader><esc> :normal!za<cr>
 
 " Fzf fuzzy search
-let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
+" let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
 let g:fzf_layout = { 'down': '~40%' }
 let g:fzf_tags_command = 'ctags -R'
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
